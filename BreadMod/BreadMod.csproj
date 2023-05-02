@@ -8,7 +8,7 @@
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>SampleMod</RootNamespace>
-        <AssemblyName>SampleMod</AssemblyName>
+        <AssemblyName>BreadMod</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>9</LangVersion>
@@ -52,6 +52,7 @@
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Source\CellProcessors\BasicCellProcessor.cs" />
+        <Compile Include="Source\CellProcessors\BreadCellProcessor.cs" />
         <Compile Include="Source\CellProcessors\CCWRotateProcessor.cs" />
         <Compile Include="Source\CellProcessors\CWRotateProcessor.cs" />
         <Compile Include="Source\CellProcessors\EnemyProcessor.cs" />

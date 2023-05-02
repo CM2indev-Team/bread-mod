@@ -8,11 +8,11 @@ using Modding;
 public class Mod : IMod
 {
     public static Interface Interface;
-    public string UniqueName => "Vanilla";
-    public string DisplayName => "Vanilla(no mods)";
+    public string UniqueName => "BreadMod";
+    public string DisplayName => "BreadMod";
     public string Author => "Mystic";
-    public string Version => "0.0.1UA";
-    public string Description => "Vanilla(no mods)";
+    public string Version => "5.0";
+    public string Description => "Bread mod";
     public string[] Dependencies => Array.Empty<string>();
 
     public void Initialize(Modding.Interface @interface)
@@ -24,6 +24,7 @@ public class Mod : IMod
     {
         yield return new BasicCellProcessor(cellGrid);
         yield return new SlideCellProcessor(cellGrid);
+        yield return new BreadCellProcessor(cellGrid);
         yield return new FreezeProcessor(cellGrid);
         yield return new GeneratorCellProcessor(cellGrid);
         yield return new CWRotateProcessor(cellGrid);
